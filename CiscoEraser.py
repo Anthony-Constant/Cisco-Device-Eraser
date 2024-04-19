@@ -27,7 +27,7 @@ def erase_device(com_port, baud_rate, password, log_file):
         # Serial connection setup
         ser = serial.Serial(com_port, baud_rate, timeout=1)
         ser.write(b"\r\n")
-        print("Initiating device erase process. Please be patient...")
+        print("Initiating device erase process...")
 
         # Give some time for the serial connection to stabilize
         time.sleep(2)
@@ -51,7 +51,7 @@ def erase_device(com_port, baud_rate, password, log_file):
 
         # Introduce a delay to allow the device to process the commands
         print("Waiting for device to complete the process...")
-        time.sleep(60)  # Adjust this delay as needed
+        time.sleep(30)  # Adjust this delay as needed
 
         # Read the output until no data is received for a short period
         erase_output = ser.read_all().decode()
