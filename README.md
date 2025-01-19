@@ -21,6 +21,9 @@ To use this script, follow these steps:
 - Python 3.x
 - pySerial
 
+## Demo
+https://www.youtube.com/watch?v=NLafmpzjY1E
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
